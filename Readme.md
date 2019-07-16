@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Бухтатый Георгий](https://up.htmlacademy.ru/adaptive/17/user/1121775).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Собакарь](https://htmlacademy.ru/profile/id128451).
 
 ---
 
