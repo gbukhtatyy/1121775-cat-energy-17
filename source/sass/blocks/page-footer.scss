@@ -1,0 +1,24 @@
+.page-footer {
+  background-color: red;
+}
+
+.page-footer__title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-footer__social {
+  border-top: 1px solid #CCC;
+}
+
+.page-footer__copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  border-top: 1px solid #CCC;
+}
+
+.copyright__text {}
+
+.copyright__link {}
