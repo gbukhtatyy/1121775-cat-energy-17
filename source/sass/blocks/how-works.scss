@@ -1,0 +1,21 @@
+.how-works {}
+
+.how-works__title {
+}
+
+.how-works__list {
+  list-style: none;
+}
+
+.how-works__item{
+  padding-left:20px;
+  margin-bottom:20px;
+
+  background-position: top left;
+  background-repeat: no-repeat;
+
+  &--food{}
+  &--powder{}
+  &--appliances{}
+  &--time{}
+}

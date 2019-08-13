@@ -1,0 +1,24 @@
+.categories {}
+
+.categories__list {
+  list-style: none;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+.categories__item{
+  padding:20px;
+
+  background-color: #F2F2F2;
+
+  &--losing{}
+
+  &--set{}
+}
+
+.categories__title {}
+
+.categories__description {}
+
+.categories__more {}
