@@ -1,11 +1,7 @@
-@import "variables.scss";
-@import "mixins.scss";
-@import "normalize.scss";
-@import "blocks/button.scss";
+@import "common/fonts.scss";
+@import "common/variables.scss";
+@import "common/mixins.scss";
+@import "common/normalize.scss";
+@import "common/common.scss";
 @import "blocks/social.scss";
-@import "blocks/page-header.scss";
-@import "blocks/page-main.scss";
 @import "blocks/page-footer.scss";
-@import "blocks/program.scss";
-@import "blocks/categories.scss";
-@import "blocks/how-works.scss";

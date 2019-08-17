@@ -1,0 +1,26 @@
+html,
+body {
+  font-family: $fonts-oswald;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.container {
+  margin: 0 auto;
+  min-width: 320px;
+  padding: 0 20px;
+}
+
+@media (min-width: $breakpoint_table) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $breakpoint_desktop) {
+  .container {
+    padding: 0 40px;
+    max-width: 1300px;
+  }
+}
