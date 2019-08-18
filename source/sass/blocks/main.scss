@@ -1,0 +1,28 @@
+.page-main__title {
+  @include font-size-height (36px, 60px);
+  @include font-oswald;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 29px;
+}
+
+@media (max-width: $tablet-width) {
+  .page-main__title {
+    padding: 0 20px;
+  }
+}
+
+.page-main__title--form {
+  margin-bottom: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    @include font-size-height (60px, 60px);
+    margin-bottom: 165px;
+  }
+
+  .page-main__title--form {
+    margin-bottom: 55px;
+  }
+}

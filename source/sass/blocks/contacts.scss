@@ -1,0 +1,117 @@
+.contacts {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  min-height: 480px;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat 0 77px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+    background-size: 640px auto;
+  }
+}
+
+.contacts__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 8px;
+  background: $white;
+}
+
+.contacts__title {
+  @include font-size-height (16px, 20px);
+  @include font-oswald;
+  text-transform: uppercase;
+  width: 160px;
+}
+
+.contacts__text {
+  @include font-size-height (14px, 20px);
+  width: 160px;
+}
+
+.contacts__pin {
+  position: absolute;
+  left: 130px;
+  top: 258px;
+  width: 124px;
+  height: 106px;
+  background: url("../img/map-pin.png") no-repeat;
+  background-size: 60px;
+}
+
+@media (max-width: $tablet-width) {
+  .contacts__wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 768px;
+    min-height: 600px;
+    margin: 0 auto;
+    background: url("../img/bg-map-tablet@1x.png") no-repeat 0 196px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+      background-size: 1534px auto;
+    }
+  }
+
+  .contacts__wrap {
+    padding: 45px 40px 40px;
+  }
+
+  .contacts__title {
+    @include font-size-height (20px, 25px);
+  }
+
+  .contacts__text {
+    @include font-size-height (16px, 20px);
+    text-align: right;
+  }
+
+  .contacts__text--city {
+    display: block;
+    padding-top: 20px;
+  }
+
+  .contacts__pin {
+    left: 322px;
+    top: 345px;
+    background-size: contain;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 1440px;
+    min-height: 400px;
+    margin: 0 auto;
+    background: url("../img/bg-map-desktop@1x.png") no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+      background-size: 2880px auto;
+    }
+  }
+
+  .contacts__wrap {
+    position: absolute;
+    top: 91px;
+    width: 410px;
+    padding: 50px 76px;
+  }
+
+  .contacts__text {
+    text-align: left;
+  }
+
+  .contacts__pin {
+    left: 999px;
+    top: 150px;
+  }
+}

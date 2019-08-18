@@ -1,0 +1,45 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  @include font-arial;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    max-width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  .container-min {
+    max-width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: 1220px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+}

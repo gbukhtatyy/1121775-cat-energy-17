@@ -1,0 +1,25 @@
+@mixin font-oswald ($color: $nearly-black) {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $color;
+}
+
+@mixin font-arial {
+  font-family: "Arial", sans-serif;
+  color: $dark-bluish-black;
+}
+
+@mixin font-size-height ($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin button {
+  @include font-size-height (14px, 18px);
+  display: block;
+  text-align: center;
+  width: 280px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  color: $white;
+  background: $light-herbal;
+}

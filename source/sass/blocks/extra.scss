@@ -1,0 +1,215 @@
+.extra {
+  margin-bottom: 32px;
+}
+
+.extra__title {
+  @include font-size-height (24px, 24px);
+  @include font-oswald;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.extra__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 38px;
+}
+
+.extra__item {
+  padding-top: 14px;
+  margin-bottom: 16px;
+  border-top: 1px solid $gray;
+}
+
+.extra__item:last-child {
+  padding-bottom: 16px;
+  border-bottom: 1px solid $gray;
+}
+
+.extra__product-name {
+  @include font-size-height (16px, 16px);
+  @include font-oswald ($black-brown);
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.extra__product-info {
+  @include font-size-height (14px, 14px);
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.extra__product-field,
+.extra__product-value {
+  padding: 0;
+}
+
+.extra__product-value {
+  text-align: right;
+}
+
+.extra__event {
+  @include font-size-height (16px, 16px);
+  position: relative;
+  min-height: 290px;
+  color: $white;
+  background: $light-herbal url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  text-align: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 560px auto;
+  }
+}
+
+.extra__event-icon {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 40%;
+  top: 23%;
+  background: url("../img/icon-gift.svg") no-repeat;
+}
+
+.extra__event-text {
+  @include font-size-height (16px, 19px);
+  padding-top: 188px;
+}
+
+@media (max-width: $tablet-width) {
+  .extra {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .extra {
+    margin-bottom: 77px;
+  }
+
+  .extra__title {
+    @include font-size-height (36px, 36px);
+    margin-left: 37px;
+    margin-bottom: 82px;
+  }
+
+  .extra__list {
+    margin-bottom: 68px;
+  }
+
+  .extra__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid #d9d9d9;
+    border-bottom: none;
+    margin-bottom: 0;
+    padding: 24px 35px 0 38px;
+  }
+
+  .extra__item:last-child {
+    padding-bottom: 0;
+  }
+
+  .extra__product-name {
+    @include font-size-height (20px, 20px);
+    margin-bottom: 25px;
+  }
+
+  .extra__product-info {
+    @include font-size-height (16px, 20px);
+    width: auto;
+    margin-left: auto;
+  }
+
+  .extra__product-value {
+    display: block;
+    margin-left: 47px;
+  }
+
+  .extra__event {
+    min-height: 200px;
+    background: $light-herbal url("../img/gift-photo-tablet@1x.jpg") no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 1416px auto;
+    }
+  }
+
+  .extra__event-icon {
+    top: 65px;
+    left: 91px;
+  }
+
+  .extra__event-text {
+    @include font-size-height (16px, 20px);
+    padding-top: 72px;
+    padding-left: 423px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+  }
+
+  .extra__title {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .extra__list {
+    width: 895px;
+    margin-bottom: 0;
+  }
+
+  .extra__item {
+    flex-wrap: nowrap;
+    padding: 0;
+    padding-top: 17px;
+    align-items: baseline;
+    border-left: none;
+    border-right: none;
+  }
+
+  .extra__product-name {
+    width: 260px;
+    margin-right: 30px;
+  }
+
+  .extra__product-info {
+    width: 295px;
+    margin-left: 0;
+  }
+
+  .extra__event {
+    width: 245px;
+    min-height: 285px;
+    background: $light-herbal url("../img/gift-photo-desktop@1x.jpg") no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 490px auto;
+    }
+  }
+
+  .extra__event-text {
+    padding-top: 170px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .product__order--extra {
+    width: 245px;
+    margin-bottom: 0;
+  }
+}
