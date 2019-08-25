@@ -113,11 +113,10 @@
 
   .categories__to-catalog {
     @include font-size-height (20px, 20px);
-    display: block;
+    display: inline-block;
     margin-bottom: 40px;
 
     &::after {
-      left: 125px;
       top: 5px;
     }
   }
