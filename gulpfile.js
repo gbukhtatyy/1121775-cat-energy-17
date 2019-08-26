@@ -105,6 +105,7 @@ gulp.task("server", function () {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
+  "webp",
   "style",
   "sprite",
   "html"
