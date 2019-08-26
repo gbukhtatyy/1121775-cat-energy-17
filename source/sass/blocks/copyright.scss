@@ -1,0 +1,13 @@
+.copyright__text {
+  @include font-size-height (16px, 16px);
+}
+
+.copyright__link {
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+}
+
+.copyright__link path {
+  fill: black;
+}
