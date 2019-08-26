@@ -40,7 +40,7 @@
 }
 
 .form__label-text--email::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 17px;
   right: 16px;
@@ -50,7 +50,7 @@
 }
 
 .form__label-text--tel::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 19px;
   right: 14px;
@@ -75,7 +75,7 @@
   width: 30px;
   height: 30px;
   box-shadow: 0 0 0 1px #cecece;
-  content: '';
+  content: "";
 }
 
 .form__label-radio::before {
@@ -93,7 +93,7 @@
   height: 14px;
   border: 8px solid $white;
   background-color: green;
-  box-shadow: 0 0px 2px 2px #cecece;
+  box-shadow: 0 0 2px 2px #cecece;
 }
 
 .form__input-checkbox:checked + .form__label-checkbox::before {
@@ -193,6 +193,8 @@
 
   .form__label-checkbox {
     padding-left: 58px;
+    width: 225px;
+    margin-bottom: 50px;
   }
 
   .form__label-radio::before,
@@ -225,11 +227,6 @@
     margin-top: -5px;
     margin-bottom: 17px;
     padding-top: 0;
-  }
-
-  .form__label-checkbox {
-    width: 225px;
-    margin-bottom: 50px;
   }
 
   .form__fieldset-submit {
