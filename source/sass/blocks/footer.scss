@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.page-footer__wrap {
+  background-color: $light-gray;
+}
+
 .page-footer__logo-text {
   display: block;
   padding-top: 36px;
@@ -34,7 +38,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 0;
+    padding: 40px 30px;
+    margin: 0 -30px;
   }
 
   .page-footer__logo-text {
@@ -48,13 +53,13 @@
 
   .page-footer__copyright {
     padding: 0;
-    padding-top: 15px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__wrap {
-    padding: 45px 0;
+    margin: 0 -110px;
+    padding: 45px 110px;
   }
 
   .page-footer__copyright {
