@@ -42,7 +42,7 @@
     @media (min-width: $desktop-width) {
       content: counter(feature_num);
       top: -105px;
-      right: 0px;
+      right: 0;
     }
   }
 }

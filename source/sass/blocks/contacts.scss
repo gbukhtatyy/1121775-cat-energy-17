@@ -11,12 +11,19 @@
   }
 }
 
+.contacts__map {
+  width: 320px;
+  min-height: 480px;
+  z-index: 1;
+}
+
 .contacts__wrap {
   display: flex;
   justify-content: space-between;
   padding-top: 18px;
   padding-bottom: 8px;
   background: $white;
+  z-index: 5;
 }
 
 .contacts__title {
@@ -61,6 +68,11 @@
     }
   }
 
+  .contacts__map {
+    width: 768px;
+    min-height: 600px;
+  }
+
   .contacts__wrap {
     padding: 45px 40px 40px;
   }
@@ -97,6 +109,11 @@
       background-image: url("../img/bg-map-desktop@2x.png");
       background-size: 2880px auto;
     }
+  }
+
+  .contacts__map {
+    width: 1440px;
+    min-height: 400px;
   }
 
   .contacts__wrap {

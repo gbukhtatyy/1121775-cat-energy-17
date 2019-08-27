@@ -53,10 +53,10 @@
           <div class="form__fieldset">
             <div class="form__fieldset-input">
               <label for="name" class="form__label-text">Имя:<sup>*</sup>
-                <input type="text" name="name" id="name" class="form__input-text" placeholder="Барсик">
+                <input type="text" name="name" id="name" class="form__input-text" placeholder="Барсик" required>
               </label>
               <label for="weight" class="form__label-text">Вec (кг):<sup>*</sup>
-                <input type="text" name="weight" id="weight" class="form__input-text" placeholder="7">
+                <input type="text" name="weight" id="weight" class="form__input-text" placeholder="7" required>
               </label>
               <label for="age" class="form__label-text">Возраст (лет):
                 <input type="text" name="age" id="age" class="form__input-text" placeholder="7">
@@ -80,11 +80,12 @@
           <h2 class="form__title">Контактные данные (владельца кота)</h2>
           <div class="form__fieldset form__fieldset-contacts">
             <label for="email" class="form__label-text form__label-text--email">E-mail:<sup>*</sup>
-              <input type="email" name="email" id="email" class="form__input-text" placeholder="kuklachev@gmail.com">
+              <input type="email" name="email" id="email" class="form__input-text" placeholder="kuklachev@gmail.com"
+                required>
             </label>
             <label for="tel" class="form__label-text form__label-text--tel">Телефон:<sup>*</sup>
               <input type="tel" name="tel" id="tel" class="form__input-text" placeholder="8 (960) 900-60-90"
-                pattern="[0-9]{1} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}">
+                pattern="[0-9]{1} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
             </label>
           </div>
           <h2 class="form__title">Комментарий</h2>
@@ -124,8 +125,8 @@
           <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span
               class="contacts__text-city">Санкт-Петербург</span></p>
         </div>
-        <div class="contacts__pin"></div>
       </div>
+      <div id="map" class="contacts__map"></div>
     </section>
   </main>
   <footer class="page-footer">
@@ -151,7 +152,11 @@
     </div>
   </footer>
 
-  <script src="js/picturefill.js" async></script>
+  <script src="js/map.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNzk22YYzqhtw8S_rcrO4sn7Gbc70_j-M&callback=initialize">
+  </script>
+  <script src="js/picturefill.js"></script>
 </body>
 
 </html>
