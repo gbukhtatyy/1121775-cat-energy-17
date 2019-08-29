@@ -4,7 +4,7 @@
 }
 
 @media (min-width: 1300px) {
-  .page-header::before {
+  .page-header--page-index::before {
     content: "";
     position: absolute;
     top: 0;
