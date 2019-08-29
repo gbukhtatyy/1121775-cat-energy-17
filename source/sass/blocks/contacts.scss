@@ -1,12 +1,11 @@
 .contacts {
   width: 100%;
   position: relative;
-  min-height: 480px;
 }
 
 .contacts__map {
   width: 100%;
-  min-height: 480px;
+  min-height: 365px;
   z-index: 1;
 
   background-image: url("../img/bg-map-mobile@1x.png");
@@ -63,7 +62,7 @@
   }
 
   .contacts__map {
-    min-height: 600px;
+    min-height: 400px;
     background-image: url("../img/bg-map-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

@@ -1,6 +1,20 @@
 .result {
-  background: $light-gray;
   padding-top: 18px;
+  background: $light-gray;
+  position: relative;
+}
+
+@media (min-width: $desktop-width) {
+  .result::before {
+    content: "";
+    position: absolute;
+    top: 135px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: $light-gray;
+    z-index: -1;
+  }
 }
 
 .result__wrap {
@@ -65,6 +79,7 @@
 }
 
 @media (max-width: $tablet-width) {
+
   .result__title,
   .result__wrap {
     padding: 0 20px;
@@ -72,7 +87,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .result {
+  .result{
+    background-color: transparent;
+    padding-top: 0;
+  }
+
+  .result_content {
     background: $white;
     padding-top: 0;
   }
@@ -115,9 +135,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .result {
+  .result_content {
     display: flex;
     flex-wrap: wrap;
+    background-color: $light-gray;
   }
 
   .result__title {
@@ -130,8 +151,6 @@
     margin-bottom: 0;
     padding-top: 55px;
     background: $light-gray;
-    padding-left: 110px;
-    margin-left: -110px;
   }
 
   .result__desk {
